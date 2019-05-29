@@ -1,0 +1,18 @@
+# Set enviroment variable
+https://stackjava.com/linux/cai-dat-tao-bien-moi-truong-tren-ubuntu.html
+
+
+# Find a file by name
+sudo find . -name "*opencv*"
+
+
+# Find inside file(belong to ./) any matching text
+grep -irn --include "*.cpp" animation
+
+
+# Show all lib and header file of installed package
+pkg-config --libs --cflags opencv
+
+
+# Build .cpp file with dynamic library
+gcc -o test test.cpp `pkg-config --libs --cflags opencv`
