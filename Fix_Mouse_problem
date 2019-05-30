@@ -1,0 +1,26 @@
+https://www.reddit.com/r/Ubuntu/comments/9a2erf/solution_left_mouse_button_suddenly_stopped/?utm_source=amp&utm_medium=comment_header
+
+//----------------------------------------------------------------------------------------------------------------------------
+Solutions
+
+After intensive searching, I found 2 workarounds.
+
+1: Click ALT+CTRL+F7 to go to text mode, then go back to normal mode using ALT+CTRL+F1. That fixed the problem for like 10 minutes. Use it so you can actually use your computer normally in order to solve the problem.
+
+I kept searching for a way, until I was able to fix it using these commands:
+
+sudo add-apt-repository ppa:raof/aubergine
+sudo apt-get update
+sudo apt-get upgrade        
+
+Then reboot, and the problem should be fixed!
+
+I don't know how the left mouse/touchpad button stopped working and why this solution works, but it did.
+
+If it didn't, here is a workaround until you found your own solution:
+
+sudo modprobe -r psmouse
+
+This command disables the touchpad, but external mouses work just fine. You need to execute it every time you boot. Not perfect, but will give you some time to solve the issue.
+
+Hope this helps!
