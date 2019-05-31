@@ -3,8 +3,9 @@ https://stackjava.com/linux/cai-dat-tao-bien-moi-truong-tren-ubuntu.html
 
 
 # Find a file by name
-sudo find . -name "*opencv*"
-
+sudo find . -name "*opencv*" -type f
+# Find a file by folder
+sudo find . -name "*opencv*" -type d
 
 # Find inside file(belong to ./) any matching text
 grep -irn --include "*.cpp" animation
