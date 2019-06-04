@@ -1,2 +1,6 @@
 #INCLUDEPATH += /usr/local/lib
 #LIBS += $(shell pkg-config opencv --libs)
+
+# OpenCV
+INCLUDEPATH += /usr/local/include/opencv4
+LIBS += $(shell pkg-config opencv --libs)
