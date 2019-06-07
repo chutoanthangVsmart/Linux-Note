@@ -1,0 +1,7 @@
+(venv) longtn9@dtlam26:~/Application/staticcamengine$ deactivate
+longtn9@dtlam26:~/Application/staticcamengine$ git status
+
+longtn9@dtlam26:~/Application/staticcamengine$ git add .
+longtn9@dtlam26:~/Application/staticcamengine$ git commit -m "First Upload"
+
+
