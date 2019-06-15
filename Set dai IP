@@ -1,0 +1,11 @@
+# Server side
+Ip: 10.111.18.135
+Netmask: 255.255.255.0
+Gateway: 10.111.18.1
+
+# check card mang
+netstat -i
+
+# add dai ip
+sudo ip a a 10.111.18.135/24 dev enp3s0
+
