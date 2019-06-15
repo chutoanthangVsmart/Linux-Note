@@ -1,7 +1,56 @@
-(venv) longtn9@dtlam26:~/Application/staticcamengine$ deactivate
-longtn9@dtlam26:~/Application/staticcamengine$ git status
 
-longtn9@dtlam26:~/Application/staticcamengine$ git add .
-longtn9@dtlam26:~/Application/staticcamengine$ git commit -m "First Upload"
+# Create a Git Respository
+- Create the repository
+- Explore your new repository
+#----------------------------------------------------------------
+# Copy your Git repository and add files
+- Clone your repository to your local system
+$ cd ~
+$ mkdir repos
+$ cd ~/repos
+$ git clone "...."
+$ ls
+#----------------------------------------------------------------
+# Add a file to your local repository and put it on Bitbucket
+$ cd ~/repos/bitbucketstationonlocation
+- Add new files/changed files
+$ git status
+$ git add --all
+$ git status
+$ git commit -m "Initial commit"
+$ git push origin master
+#----------------------------------------------------------------
+# Pull changes from your Git repository on Bitbucket Cloud
+- Create a file in Bitbucket
+- Pull changes from a remote repository
+$ cd ~/repos/bitbucketstationonlocation
+$ git pull --all
+#----------------------------------------------------------------
+# Use a Git branch to merger a file
+- Create a branch and make a change
+$ cd ~/repos/bitbucketstationlocations/
+$ git branch future-plans
+$ git checkout future-plans
+- Add new files/change files
+$ git status
+$ git commit -m 'making a change in a branch'
+- Merge your branch:fast-forward merging
+$ cd ~/repos/bitbucketstationlocations/
+$ git status
+$ git checkout master
+$ git merge future-plans 
+$ git branch -d future-plans 
+$ git status 
+- Push your change to Bitbucket
+$ git push origin master
+
+
+
+
+
+
+
+
+
 
 
